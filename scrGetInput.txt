@@ -1,0 +1,70 @@
+/// scrGetInput( )
+
+// 001a: Define Primary Player Input Variables
+    Right = vk_right;
+    Up = vk_up;
+    Down = vk_down;
+    Left = vk_left;
+    
+    A = ord( 'A' );
+    B = ord( 'D' );
+    L = ord( 'Q' );
+    R = ord( 'R' );
+    
+    Select = vk_alt;
+    Start = vk_enter;
+    
+
+// 001b: Define secondary Player Input Variables
+
+    // **DO NOT TOUCH**
+        // Pressed
+            RightPressed = keyboard_check_pressed( Right );
+            UpPressed = keyboard_check_pressed( Up );
+            DownPressed = keyboard_check_pressed( Down );
+            LeftPressed = keyboard_check_pressed( Left );
+            
+            APressed = keyboard_check_pressed( A );
+            BPressed = keyboard_check_pressed( B );
+            LPressed = keyboard_check_pressed( L );
+            RPressed = keyboard_check_pressed( R );
+            
+            SelectPressed = keyboard_check_pressed( Select );
+            StartPressed = keyboard_check_pressed( Start );
+    
+        // Held
+            RightHeld = keyboard_check( Right );
+            UpHeld = keyboard_check( Up );
+            DownHeld = keyboard_check( Down );
+            LeftHeld = keyboard_check( Left );
+            
+            AHeld = keyboard_check( A );
+            BHeld = keyboard_check( B );
+            LHeld = keyboard_check_pressed( L );
+            RHeld = keyboard_check_pressed( R );
+            
+            SelectHeld = keyboard_check_pressed( Select );
+            StartHeld = keyboard_check_pressed( Start );
+        
+        // Released
+            RightReleased = keyboard_check_released( Right );
+            UpReleased = keyboard_check_released( Up );
+            DownReleased = keyboard_check_released( Down );
+            LeftReleased = keyboard_check_released( Left );
+            
+            AReleased = keyboard_check_released( A );
+            BReleased = keyboard_check_released( B );
+            LReleased = keyboard_check_released( L );
+            RReleased = keyboard_check_released( R );
+            
+            SelectReleased = keyboard_check_released( Select );
+            StartReleased = keyboard_check_released( Start );
+            
+            
+    
+// 001z: Define System Input Variables
+    RoomCurrent = keyboard_check_pressed( vk_f2 );
+    Restart = keyboard_check_pressed( vk_f8 );
+    Quit = keyboard_check_pressed( vk_f9 );
+
+// 010a: Debug Defaults
